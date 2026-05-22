@@ -1,0 +1,9 @@
+program program1;
+var
+  x: integer;
+  y$: real;           
+begin
+  x := 999999;        
+  z := 5.5.5;         
+  a := @invalid;      
+end.
