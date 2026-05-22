@@ -35,7 +35,6 @@ namespace Компилятор
             };
             map[3] = group;
 
-            // ... остальные группы ...
             group = new Dictionary<string, byte>
             {
                 ["then"] = LexicalAnalyzer.thensy,

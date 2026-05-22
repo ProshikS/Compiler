@@ -119,7 +119,7 @@ namespace Компилятор
         {
             if (_endReached) return false;
 
-            if (PositionNow.CharNumber > _lastInLine) // конец строки
+            if (PositionNow.CharNumber > _lastInLine)
             {
                 ListThisLine();
                 if (Errors != null && Errors.Count > 0)
@@ -135,10 +135,10 @@ namespace Компилятор
 
                 PositionNow = new TextPosition(PositionNow.LineNumber + 1, 0);
 
-                if (_lastInLine < 0) // пустая строка – читаем следующую
+                // пустая строка – читаем следующую
+                if (_lastInLine < 0) 
                     return NextCh();
 
-                // Избегаем прямого инкремента поля свойства-структуры
                 var currentPos = PositionNow;
                 Ch = _line![currentPos.CharNumber];
                 currentPos.CharNumber++;

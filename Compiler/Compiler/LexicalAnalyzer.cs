@@ -23,13 +23,10 @@ namespace Компилятор
             downtosy = 118, packedsy = 119, recordsy = 120, repeatsy = 121,
             programsy = 122, functionsy = 123, procedurensy = 124;
 
-#pragma warning disable CS0169 // Поле не используется (оставлено для будущего расширения)
         private byte _symbol;
         private TextPosition _token;
         private string? _addrName;
         private int _nmbInt;
-        private float _nmbFloat;   // не используется в текущей реализации
-        private char _oneSymbol;   // не используется в текущей реализации
 #pragma warning restore CS0169
 
         private readonly Keywords _keywords = new Keywords();
